@@ -1,0 +1,20 @@
+.bubbleButton{
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding:10px 50px;
+    cursor:pointer;
+}
+
+.bubbleButton:hover{
+    background-color: #dadada;
+    animation: fadeColorHover 0.1s linear forwards;
+}
+
+@keyframes fadeColorHover{
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: #dadada;
+    }
+}

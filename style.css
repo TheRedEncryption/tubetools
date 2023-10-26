@@ -16,6 +16,9 @@ body {
     animation: fadeColorHover 0.1s linear forwards;
 }
 
+.record:{
+    height:2em;
+}
 .record::before{
     content: "";
     display:block;
@@ -24,6 +27,7 @@ body {
     background-size: 2em;
     background-image: url(assets/icons/microphone-342.svg);
     background-repeat: no-repeat;
+    filter:invert(var(--inversion));
 }
 
 @keyframes fadeColorHover{
@@ -33,4 +37,16 @@ body {
     to {
         background-color: #dadada;
     }
+}
+
+body {
+    margin:0px;
+}
+
+#flexBox{
+    display: flex;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }

@@ -16,8 +16,8 @@ body {
     animation: fadeColorHover 0.1s linear forwards;
 }
 
-.record:{
-    height:2em;
+.record{
+    /*sata andagi*/
 }
 .record::before{
     content: "";
@@ -49,4 +49,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#volumeMeter{
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    transition: height 0.1s;
 }
